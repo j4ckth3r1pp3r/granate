@@ -1,0 +1,34 @@
+/*
+	Theme Name: J4ck Blank Theme
+	Theme URI: http://j4ck.lp5.com.ua/
+	Description: Jack Blank Template for LP5 works
+	Version: 1.0
+	Author: Jack The Ripper
+	Author URI: http://j4ck.lp5.com.ua/
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+figure.specialist img {
+  max-width: 100%;
+  max-height: 222px;
+}
+
+.new-equipment .equipment-item .img-wrap img {
+  max-height: 308px;
+}
+
+body {
+  /*overflow-x: hidden;*/
+}
+
+.quality__left.justpage {
+  font-weight: 500;
+}
+
+.alignleft {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
