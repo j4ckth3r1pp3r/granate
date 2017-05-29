@@ -84,7 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="clr"></div>
 							<?php if (option_field( "facebook" ) || option_field( "instagram" )): ?>
 								<div class="social">
-								<a href="#" class="blog">блог</a>
+								<a href="<? SITE_URL ?>/blog" class="blog">блог</a>
 									<?php if (option_field( "facebook" )): ?>
 										<a href="<?= option_field( "facebook" ) ?>">
 											<img src="<?= THEME_URL ?>/images/facebook-logo-black.svg" alt="" />

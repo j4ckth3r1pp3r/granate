@@ -28,6 +28,19 @@ $args = array (
     );
 
 register_post_type('service', $args);
+  // Комплектации
+$args = array (
+    'public'       => true,
+    'labels'       => array('name' => 'Записи', 'singular_name' => 'Запись', 'add_new' => 'Добавить'),
+    'show_in_menu' => true,
+    'menu_icon'    => 'dashicons-businessman',
+    'query_var'    => true,
+    'rewrite'      => true,
+    'has_archive'  => true,
+    'supports'     => array('title', 'thumbnail', 'editor')
+    );
+
+register_post_type('blog', $args);
 //
 //
 // $args = array (

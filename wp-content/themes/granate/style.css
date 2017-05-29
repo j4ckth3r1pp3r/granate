@@ -32,3 +32,52 @@ body {
     float: left;
     margin: 0.5em 1em 0.5em 0;
 }
+
+.floatleft {
+  float: left;
+}
+
+.archive-blog img, .blog-single img {
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 25px;
+  border-color: #0a97d8;
+}
+
+.archive-blog-box {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.archive-blog-box h2 {
+  margin-bottom: 10px;
+}
+
+.col-lg-12.archive-blog-box:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.archive-blog-box:nth-last-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.pagination {
+    margin-bottom: 15px;
+}
+
+.pagination * {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.pagination .current {
+  border-color: #337ab7;
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.archive-blog-box a:hover {
+  text-decoration: underline;
+}
