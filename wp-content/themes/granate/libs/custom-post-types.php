@@ -31,7 +31,7 @@ register_post_type('service', $args);
   // Комплектации
 $args = array (
     'public'       => true,
-    'labels'       => array('name' => 'Записи', 'singular_name' => 'Запись', 'add_new' => 'Добавить'),
+    'labels'       => array('name' => 'Блог', 'singular_name' => 'Запись блога', 'add_new' => 'Добавить'),
     'show_in_menu' => true,
     'menu_icon'    => 'dashicons-businessman',
     'query_var'    => true,

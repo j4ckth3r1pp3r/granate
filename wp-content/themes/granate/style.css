@@ -81,3 +81,42 @@ body {
 .archive-blog-box a:hover {
   text-decoration: underline;
 }
+
+.swiper-container-new-equipment.without-slider .swiper-slide {
+  flex-shrink: 0;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  margin-right: 3%;
+  float: left;
+}
+
+.swiper-container-new-equipment.without-slider .swiper-wrapper {
+  display: block;
+}
+
+.all-equipment-link {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: -40px;
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.all-equipment-link:hover {
+  background-color: #56c847;
+}
+
+.breadcrumbs {
+  padding: 15px;
+}
+
+.breadcrumbs a:after {
+  content: '➤';
+  color: #333;
+  margin: 5px;
+}

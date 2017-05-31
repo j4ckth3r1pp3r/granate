@@ -52,14 +52,14 @@ jQuery(function($) {
 		        nextButton: '.swiper-button-next',
         		prevButton: '.swiper-button-prev'
 		    });
-		     var swiper = new Swiper('.swiper-container-new-equipment', {
+		     if (!location.pathname.match(/equipment/)) {var swiper = new Swiper('.swiper-container-new-equipment', {
 		        pagination: '.swiper-pagination',
 		        slidesPerView: 3,
 		        paginationClickable: true,
 		        spaceBetween: 30,
 		        nextButton: '.swiper-button-next',
         		prevButton: '.swiper-button-prev'
-		    });
+		    });}
 		})();
 
 		(function(){

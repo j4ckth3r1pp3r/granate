@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="grid row">
 						<?php foreach ($gallery as $photo): ?>
 							<div class="grid-item col-xs-3">
-								<a href="<?= $photo['url'] ?>">
+								<a href="<?= $photo['sizes']['1600'] ?>">
 									<img src="<?= get_image_field( $photo, "300-square" ) ?>">
 								</a>
 							</div>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
 </div>
 <div class="doctors__wrap">
@@ -41,10 +42,8 @@
 									<div class="certificate-wrap">
 										<div class="row">
 											<?php foreach ($gallery as $image): ?>
-												<div class="col-xs-4">
-													<a target="_blank" class="image-popup-no-margins" href="<?= get_image_field( $image, "300-square" ) ?>">
-														<img src="<?= get_image_field( $image, "300-square" ) ?>" alt="doctor1">
-													</a>
+												<div class="col-xs-2" style="margin-bottom: 20px;">
+													<img src="<?= get_image_field( $image, "300" ) ?>" alt="doctor1">
 												</div>
 											<?php endforeach; ?>
 

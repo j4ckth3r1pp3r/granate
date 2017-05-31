@@ -621,6 +621,7 @@
 						<?php endwhile; ?>
 			        </div>
 			        <!-- Add Pagination -->
+							<a href="<?= SITE_URL ?>/equipment" class="all-equipment-link">Все оборудование</a>
 			        <div class="swiper-pagination"></div>
 			        <div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>

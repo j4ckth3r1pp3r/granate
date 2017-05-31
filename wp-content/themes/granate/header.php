@@ -115,3 +115,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</ul><!-- .navigation-items items -->
 		</div><!-- .container -->
 	</nav><!-- .navigation -->
+<?php get_template_part('partials/breadcrumbs') ?>
