@@ -5,7 +5,7 @@
 	<?php endif; ?>
 	<?php if (is_singular('service')): ?>
 		<a href="<?= SITE_URL ?>/services">Услуги</a>
-	<?php elseif (!is_archive()): ?>
+	<?php elseif (!is_archive() && ! is_404()): ?>
 		<?php
 			$post_type = get_post_type( $post_id );
 			$post_type_object = get_post_type_object($post_type);
@@ -18,5 +18,7 @@
 		<span><?= get_field( "title" )?:get_the_title() ?></span>
 	<?php elseif (is_archive()): ?>
 		<span><?php post_type_archive_title() ?></span>
+	<?php elseif (is_404()): ?>
+		<span>404 - Страница не найдена</span>
 	<?php endif; ?>
 </div>

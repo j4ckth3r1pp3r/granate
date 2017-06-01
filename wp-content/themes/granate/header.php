@@ -84,6 +84,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="clr"></div>
 							<?php if (option_field( "facebook" ) || option_field( "instagram" )): ?>
 								<div class="social">
+									<div class="g-plusone-wrapper">
+										<div class="g-plusone" data-size="medium" id="google-plus"></div>
+									</div>
 								<a href="<? SITE_URL ?>/blog" class="blog">блог</a>
 									<?php if (option_field( "facebook" )): ?>
 										<a href="<?= option_field( "facebook" ) ?>">
@@ -115,4 +118,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</ul><!-- .navigation-items items -->
 		</div><!-- .container -->
 	</nav><!-- .navigation -->
-<?php get_template_part('partials/breadcrumbs') ?>
+<?php if (!is_front_page()) get_template_part('partials/breadcrumbs') ?>

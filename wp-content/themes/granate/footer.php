@@ -93,5 +93,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <?php wp_footer(); ?>
 </div>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'ru'}
+</script>
 </body>
 </html>

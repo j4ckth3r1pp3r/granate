@@ -120,3 +120,14 @@ body {
   color: #333;
   margin: 5px;
 }
+
+.g-plusone-wrapper {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+}
+
+.g-plusone-wrapper > div {
+  position: relative;
+  top: 5px !important;
+}
