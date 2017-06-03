@@ -131,3 +131,19 @@ body {
   position: relative;
   top: 5px !important;
 }
+
+.stock-more {
+  animation: implants  2s infinite linear;
+}
+
+@keyframes implants {
+    from {
+      background-color: #fff;
+    }
+    50% {
+      background-color: #8dcae6;
+    }
+    to {
+      background-color: #fff;
+    }
+}
