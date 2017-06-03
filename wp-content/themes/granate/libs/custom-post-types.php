@@ -24,7 +24,8 @@ $args = array (
     'query_var'    => true,
     'rewrite'      => true,
     'has_archive'  => true,
-    'supports'     => array('title')
+    'hierarchical' => true,
+    'supports'     => array('title', 'page-attributes')
     );
 
 register_post_type('service', $args);

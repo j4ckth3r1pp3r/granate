@@ -1,11 +1,36 @@
 <?php get_header(); ?>
 
+<?php
+	$args = [
+		'post_type' => 'service',
+		'post_status' => 'publish',
+		'order' => 'ASC',
+		'posts_per_page' => -1,
+		'post_parent' => get_the_ID()
+	];
+
+	$childPosts = new WP_Query($args);
+?>
 
 <div class="galery template">
 	<div class="container">
 		<div class="block-ttl left">
 			<?= get_the_title() ?>
 		</div><!-- .block-ttl left -->
+			<?php if ($childPosts->have_posts()): ?>
+				<div class="row child-posts">
+					<?php while ($childPosts->have_posts()) : $childPosts->the_post(); ?>
+						<div class="col-md-4 col-sm-6 col-xs-12 child-post">
+							<a href="<?php the_permalink(); ?>">
+								<div class="image">
+									<img src="<?= (get_field( "thumb_main" )?:PLACEHOLDER) ?>" alt="">
+								</div>
+								<?= get_the_title() ?>
+							</a>
+						</div>
+					<?php endwhile; ?>
+				</div>
+			<?php wp_reset_postdata(); endif; ?>
 		<?php if (get_field( "main_img" ) && get_field( "main_text" )): ?>
 			<div class="galery_wrap">
 				<div class="galery-item">

@@ -5,7 +5,8 @@
 		'post_type' => 'service',
 		'post_status' => 'publish',
 		'order' => 'ASC',
-    'posts_per_page' => -1
+    'posts_per_page' => -1,
+    'post_parent' => 0
 	];
 
 	if (!get_field( "hide_service" )) $services = new WP_Query($args);
