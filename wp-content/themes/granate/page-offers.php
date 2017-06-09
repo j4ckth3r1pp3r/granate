@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div class="container">
+	<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+</div>
 
 <section class="shares">
 	<div class="container">

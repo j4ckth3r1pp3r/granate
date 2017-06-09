@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div class="container">
+	<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+</div>
 <div class="first-block">
 	<div class="block-ttl center">
 		<?= get_field( "title" )?:get_the_title() ?>

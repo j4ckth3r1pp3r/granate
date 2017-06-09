@@ -4,6 +4,10 @@
  */
 get_header(); ?>
 
+<div class="container">
+	<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+</div>
+
 <div class="galery-wrap">
 	<div class="container">
 		<div class="block-ttl">

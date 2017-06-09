@@ -4,6 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="quality__left justpage blog-single col-lg-12">
+				<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
 				<div class="block-ttl left">
 					<?= get_the_title() ?>
 				</div><!-- .block-ttl -->

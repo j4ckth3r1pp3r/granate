@@ -14,6 +14,7 @@
 
 <div class="galery template">
 	<div class="container">
+		<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
 		<div class="block-ttl left">
 			<?= get_the_title() ?>
 		</div><!-- .block-ttl left -->

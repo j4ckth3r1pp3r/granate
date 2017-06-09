@@ -183,3 +183,8 @@ body {
     height: inherit;
     padding: 13px;
 }
+
+.post-ratings img {
+  margin-right: inherit;
+  width: auto;
+}
