@@ -187,6 +187,7 @@ body {
 .post-ratings img {
   margin-right: inherit;
   width: auto;
+  border-width: 0px;
 }
 
 .post-ratings {
