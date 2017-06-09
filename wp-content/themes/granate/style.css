@@ -188,3 +188,7 @@ body {
   margin-right: inherit;
   width: auto;
 }
+
+.post-ratings {
+  height: 30px;
+}
