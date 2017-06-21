@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<div class="g-plusone-wrapper">
 										<div class="g-plusone" data-size="medium" id="google-plus"></div>
 									</div>
-								<a href="<? SITE_URL ?>/blog" class="blog">блог</a>
+								<a href="<?= SITE_URL ?>/blog" class="blog">блог</a>
 									<?php if (option_field( "facebook" )): ?>
 										<a href="<?= option_field( "facebook" ) ?>">
 											<img src="<?= THEME_URL ?>/images/facebook-logo-black.svg" alt="" />
