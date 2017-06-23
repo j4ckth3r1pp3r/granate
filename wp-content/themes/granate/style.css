@@ -48,6 +48,7 @@ body {
   margin-bottom: 20px;
   padding-bottom: 20px;
   padding-top: 5px;
+  float: left;
 }
 
 .archive-blog-box h2 {
